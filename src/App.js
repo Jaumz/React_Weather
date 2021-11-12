@@ -7,7 +7,7 @@ function App() {
 
   const searchForecastWeather = () => {
     fetch(`
-    http://api.weatherapi.com/v1/current.json?key=71cb9d6ee141459c9c311223212110&q=${city}&lang=pt
+    https://api.weatherapi.com/v1/current.json?key=71cb9d6ee141459c9c311223212110&q=${city}&lang=pt
     `)
       .then((response) => {
         if (response.status === 200) {
